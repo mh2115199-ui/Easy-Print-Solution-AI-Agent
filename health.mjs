@@ -1,0 +1,1 @@
+export async function handler(){return {statusCode:200,headers:{'content-type':'application/json'},body:JSON.stringify({ok:true,service:'EPS AI Agent',metaConfigured:!!(process.env.META_VERIFY_TOKEN&&process.env.META_APP_SECRET),databaseConfigured:!!(process.env.SUPABASE_URL&&process.env.SUPABASE_SERVICE_ROLE_KEY),autoReplyEnabled:false})}}

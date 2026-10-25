@@ -1,0 +1,2 @@
+import fs from 'node:fs';import path from 'node:path';
+const root=process.cwd(),out=path.join(root,'dist');fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(out,{recursive:true});fs.copyFileSync(path.join(root,'index.html'),path.join(out,'index.html'));fs.cpSync(path.join(root,'src'),path.join(out,'src'),{recursive:true});fs.cpSync(path.join(root,'public'),out,{recursive:true});console.log('Built static dashboard to dist/');
