@@ -1,0 +1,1 @@
+{"name":"easy-print-solution-ai-agent","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"node scripts/dev.mjs","build":"node scripts/build.mjs","preview":"node scripts/dev.mjs dist","test":"node --test tests/*.test.js"},"engines":{"node":">=20"}}
